@@ -1,5 +1,6 @@
-#projects{
-    overflow:hidden;
+
+#projects {
+    overflow: hidden;
     width: 100vw;
     max-width: 65rem;
     display: flex;
@@ -8,58 +9,76 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-
-}
-.projectTitle{
-    font-size:3rem ;
+  }
+  
+  .projectTitle {
+    font-size: 3rem;
     font-weight: 600;
     padding-top: 3rem;
     margin-bottom: 1.5rem;
-} 
-
-.projectDesc{
+  }
+  
+  .projectDesc {
     font-weight: 300;
     font-size: 1rem;
     max-width: 50rem;
     padding: 0 2rem;
-}
-
-.projectBars{
+    text-align: center; /* Center-align the description */
+  }
+  
+  .projectBars {
     margin: 1.5rem;
     width: 100vw;
     max-width: 80%;
-}
-
-.projectBar{
+  }
+  
+  .projectBar {
     display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center; /* Center-align content horizontally */
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    background: rgb(60,50, 50);
-
-
-}
-
-
-
-.projectBarText>p{
+    background: rgb(60, 50, 50);
+  }
+  
+  .projectBarText > p {
     font-size: 1rem;
     font-weight: 200;
-}
-
-@media  screen and (max-width:720px) {
-    .projectBarText>p{
-        font-size: 2vw;
+    max-width: 50rem;
+    padding: 0 2rem;
+    text-align: center; /* Center-align the text inside project bars */
+  }
+  
+  @media screen and (max-width: 720px) {
+    .projectBarText > p {
+      font-size: 2vw;
     }
-    
-} 
-
-@media  screen and (max-width:80px) {
-    .projectBarText>p{
-        font-size: 3vw;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .projectBarText > p {
+      font-size: 3vw;
     }
   
-    .projectBarText>h2{
-        font-size: 5vw;
+    .projectBarText > h2 {
+      font-size: 5vw;
     }
-} 
+  }
+  .projectBarText > button {
+    background: white;
+    color: black;
+    /* background-color: #007BFF; 
+    color: white; Text color; */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem; /* Add some spacing between the button and other content */
+  }
+  
+  .projectBarText > button:hover {
+    background-color: palevioletred; /* Change the background color on hover */
+  }
+  
