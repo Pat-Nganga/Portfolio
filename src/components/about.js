@@ -1,10 +1,10 @@
 import React from 'react'
-import './skills.css'
+import './about.css'
 import UIDesign from '../assets/ui-design.png'
 import WebDesign from '../assets/website-design.png'
 import AppDesign from '../assets/app-design.png'
 
-const Skills = () => {
+const About= () => {
   return (
    
     <section id='skills'>
@@ -47,4 +47,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default About
