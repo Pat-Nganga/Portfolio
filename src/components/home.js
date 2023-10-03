@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css'
-import bg  from'../assets/bimage.png'
+import bg  from'../assets/photobck.png'
 
 
 const Home = () => {
