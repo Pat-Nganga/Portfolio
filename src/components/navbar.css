@@ -16,10 +16,12 @@
     
     margin: 1rem;
     cursor: pointer;
+    color: whitesmoke;
 }
 .desktopMenuListItem:hover{
     color: palevioletred;
     padding-bottom: 0.5rem;
+    
 }
 .desktopMenuBtn {
     background: whitesmoke;
