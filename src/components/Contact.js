@@ -2,7 +2,7 @@ import React from "react";
 import emailjs from 'emailjs-com';
 import githubIcon from '../assets/github.png';
 import linkedInLogo from '../assets/linkedIn.png';
-import './contact.css';
+import './Contact.css';
 
 const Contact = () => {
   const linkedInURL = "https://www.linkedin.com/in/patricia-ng-ang-a-75798212a/";

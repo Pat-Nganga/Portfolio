@@ -1,10 +1,10 @@
-import Navbar from "./components/navbar";
-import Home from './components/home';
-import About from './components/about';
-import Portfolio from './components/portfolio';
-import Contact from "./components/contact";
-import Footer from "./components/footer";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from "./components/Navbar";
+import Home from './components/Home';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { Route,Routes } from "react-router-dom";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     
     <div className="App">
     <Navbar/>
-    <Router>
+    
       
     <Routes>
     
@@ -26,7 +26,7 @@ function App() {
 
 
     </Routes>      
-    </Router>
+    
     <Footer/>
     </div>
   );
