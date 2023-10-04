@@ -47,8 +47,8 @@
 }
 
 button[type="submit"] {
-  background-color:palevioletred;
-  color: white;
+  background-color:whitesmoke;
+  color: black;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -57,20 +57,46 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: rgb(151, 52, 151);
+  background-color:#333
 }
-
+/* 
 .links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center-align the links horizontally */
+  justify-content: center;
   margin-top: 2rem;
+ 
 }
 
 .link {
   object-fit: cover;
   height: 3rem;
-  width: 3rem; /* Adjust the width of the links as needed */
+  width: 3rem; 
   margin: 0 1rem;
   cursor: pointer;
+} */
+/* Add styles for round links */
+.round-link {
+  display: inline-block;
+  border-radius: 50%; /* Make the link round */
+  background-color: black; /* Set the background color to black */
+  padding: 8px; /* Adjust the padding as needed */
+  margin: 0 10px; /* Add margin for spacing */
+  transition: background-color 0.3s ease; /* Add a smooth transition for background color changes */
+  margin-top: 2rem;
 }
+
+/* Style the link images (icons) inside the round links */
+.round-link .link {
+  display: block;
+  width: 40px; /* Set the width of the icon */
+  height: 40px; /* Set the height of the icon */
+  object-fit: cover;
+  filter: invert(100%); /* Invert the icon colors to white */
+}
+
+/* Change the background color of the round link when hovered */
+.round-link:hover {
+  background-color: #333; /* Change to a darker color on hover */
+}
+

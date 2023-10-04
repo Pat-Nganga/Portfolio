@@ -39,7 +39,7 @@
     margin: 1rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
-    background: rgb(60, 50, 50);
+    background:rgb(40,40,40);
   }
   
   .projectBarText > p {
@@ -65,20 +65,88 @@
       font-size: 5vw;
     }
   }
-  .projectBarText > button {
-    background: white;
+  /* .projectBarText > button {
+    background: white; 
     color: black;
-    /* background-color: #007BFF; 
-    color: white; Text color; */
+   
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 1rem; /* Add some spacing between the button and other content */
+    margin-top: 1rem; 
   }
   
   .projectBarText > button:hover {
-    background-color: palevioletred; /* Change the background color on hover */
-  }
+    background-color: palevioletred; 
+  } */
   
+  /* Add styles for the "More Info" button */
+.more-info-button {
+  background-color: rgb(58, 57, 57); /* Set the background color to black */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove the border */
+  padding: 0.5rem 1rem; /* Add padding for spacing */
+  border-radius: 0.3rem; /* Add rounded corners */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Add a smooth transition for background color changes */
+}
+
+/* Change the background color of the button on hover */
+.more-info-button:hover {
+  background-color: palevioletred; /* Change to a darker color on hover */
+}
+
+/* Remove the default underline style for the link inside the button */
+.more-info-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Center the text inside the button */
+.more-info-button a {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+/* Define the animation for the h2 element */
+/* Define the animation for the h2 element */
+/* Define the animation for the h2 element */
+/* Define the animation for the h2 element */
+.project-title {
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  position: relative; /* Set a relative position to enable absolute positioning of letters */
+  animation: dropIn 1.5s forwards; /* Adjust duration as needed */
+}
+
+/* Define individual styles for each letter */
+.project-title::after {
+  content: "";
+  position: absolute;
+  top: -100%; /* Start from above the element */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  animation: letterDrop 0.2s linear 0.5s forwards; /* Adjust duration and delay as needed */
+}
+
+/* Keyframes for the drop-in animation */
+@keyframes dropIn {
+  from {
+    transform: translateY(-100%); /* Start from above the element */
+  }
+  to {
+    transform: translateY(0); /* Animate to its original position */
+  }
+}
+
+/* Keyframes for the individual letter drop animation */
+@keyframes letterDrop {
+  to {
+    top: 0; /* Drop to the original position */
+    background-color: transparent; /* Optionally, you can add a background color */
+  }
+}
