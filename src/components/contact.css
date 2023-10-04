@@ -23,6 +23,9 @@
   gap: 1rem;
   margin: 0 auto; /* Center the form horizontally */
   max-width: 40rem; /* Adjust the maximum width as needed */
+  /* background: rgb(60, 50, 50); */
+
+
 }
 
 .name,
